@@ -11,9 +11,9 @@ export default function UserCard({ id, name, age, image }: Props) {
   return (
     <div className="overflow-hidden border rounded border-slate-400">
       <img
-        src={image ?? ""}
+        src={image ?? "/d.png"}
         alt={`${name}'s profile`}
-        className="border border-slate-900"
+        className="border border-slate-900 h-[150px] object-cover"
       />
       <div className="p-2">
         <h3 className="font-bold">

@@ -6,7 +6,7 @@ export default async function page({}: Props) {
   const users = await prisma.user.findMany();
 
   return (
-    <div className="grid grid-cols-3">
+    <div className="grid grid-cols-3 gap-4">
       {users.map((user) => {
         return (
           <div>
